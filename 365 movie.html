@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>MovieSite</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightslider.css">
+    <!...js-link.........>
+        <script src="js/JQuery3.3.1.js"></script>
+        <script src="js/lightslider.js"></script>
+</head>
+
+
+
+
+<body>
+
+
+<!--navigation-------------->
+    <nav>
+        <!--logo--------------->
+        <a href="#" class="logo">
+            <img src="img/logo.jpg"/>
+        </a>
+        <div class="logo">
+                <a href="">MovieSide</a>
+            </div>
+        <!--menu--btn----------------->
+        <input type="checkbox" class="menu-btn" id="menu-btn"/>
+        <label class="menu-icon" for="menu-btn">
+            <span class="nav-icon"></span>
+        </label>
+        <!--menu-------------->
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">TV Shows</a></li>
+            <li><a href="#">Hollywood</a></li>
+            <li><a href="#">Horror</a></li>
+        </ul>
+        <!--search------------->
+        <div class="search">
+            <input type="text" placeholder="Find Your Favourtie Movies"/>
+            <!--search-icon----------->
+            <i class="fas fa-search"></i>
+        </div>
+    </nav>
+    <section id="main">
+        <!--showcase----------------------->
+        <!--heading------------->
+        <h1 class="showcase-heading">Showcase</h1>
+        
+        <ul id="autoWidth" class="cs-hidden">
+        
+        <!--box-1--------------------------->
+        <li class="item-a">
+            <!--showcase-box------------------->
+           <div class="showcase-box">
+               <img src="img1/img2.jpg"/>
+           </div>
+               </li>
+            <!--box-2--------------------------->
+            <li class="item-b">
+                <!--showcase-box------------------->
+               <div class="showcase-box">
+                   <img src="img1/img1.jpg"/>
+               </div>
+                   </li>
+                <!--box-3--------------------------->
+            <li class="item-c">
+                <!--showcase-box------------------->
+               <div class="showcase-box">
+                   <img src="img1/img3.jpg"/>
+               </div>
+                   </li>
+                <!--box-4--------------------------->
+            <li class="item-d">
+                <!--showcase-box------------------->
+               <div class="showcase-box">
+                   <img src="img1/img4.jpg"/>
+               </div>
+                   </li>
+                   <!--box-5--------------------------->
+            <li class="item-e">
+                <!--showcase-box------------------->
+               <div class="showcase-box">
+                   <img src="img1/img5.jpeg"/>
+               </div>
+                   </li>
+          </ul>
+      </section>
+
+     <!.background.....>
+        <div class="enter">
+        <h1>
+           365 ENTERTAINMENT
+            <br>
+            <marquee behavior="slide"scrollamount="15">Welcome to MovieSite</marquee> 
+        </h1>
+        </div>
+
+      <!....slider-script.....>
+        <script>
+            $(document).ready(function() {
+    $('#autoWidth ,#autoWidth2').lightSlider({
+        autoWidth:true,
+        loop:true,
+        onSliderLoad: function() {
+            $('#autoWidth ,#autoWidth2').removeClass('cS-hidden');
+        } 
+    });  
+  });
+
+        </script>
+
+    <!--latest-movies---------------------->
+    <section id="latest">
+        <h2 class="latest-heading">Latest Movies</h2>
+        <!--slider------------------->
+        <ul id="autoWidth2" class="cs-hidden">
+            <!--slide-box-1------------------>
+            <li class="item-a">
+                <div class="latest-box">
+                    <!--img-------->
+                    <div class="latest-b-img">
+                        <img src="image/i-1.jpeg">
+                    </div>
+                    <!--text---------->
+                    <div class="latest-b-text">
+                        <strong>TEDDY</strong>
+                        <p>Drama Movie</p>
+                    </div>
+               </div>
+            </li>
+    <!--slide-box-2------------------>
+    <li class="item-b">
+        <div class="latest-box">
+            <!--img-------->
+            <div class="latest-b-img">
+                <img src="image/i-2.jpeg">
+            </div>
+            <!--text---------->
+            <div class="latest-b-text">
+                <strong>VADACHENNAI</strong>
+                <p>Action Movie</p>
+            </div>
+        </div>
+    </li>
+    <!--slide-box-3------------------>
+    <li class="item-c">
+        <div class="latest-box">
+            <!--img-------->
+            <div class="latest-b-img">
+                <img src="image/i-3.jpg">
+            </div>
+            <!--text---------->
+            <div class="latest-b-text">
+                <strong>KAITHI</strong>
+                <p>Action Movie</p>
+            </div>
+        </div>
+    </li>
+    <!--slide-box-4------------------>
+    <li class="item-d">
+        <div class="latest-box">
+            <!--img-------->
+            <div class="latest-b-img">
+                <img src="image/i-4.jpg">
+            </div>
+            <!--text---------->
+            <div class="latest-b-text">
+                <strong>MANDELAA</strong>
+                <p>Drama Movie</p>
+            </div>
+        </div>
+    </li>
+    <!--slide-box-5------------------>
+    <li class="item-e">
+        <div class="latest-box">
+            <!--img-------->
+            <div class="latest-b-img">
+                <img src="image/i-5.jpeg">
+            </div>
+            <!--text---------->
+            <div class="latest-b-text">
+                <strong>K.G.F</strong>
+                <p>Action Movie</p>
+            </div>
+        </div>
+    </li>
+    <!--slide-box-6------------------>
+    <li class="item-f">
+        <div class="latest-box">
+            <!--img-------->
+            <div class="latest-b-img">
+                <img src="image/i-6.jpeg">
+            </div>
+            <!--text---------->
+            <div class="latest-b-text">
+                <strong>KAAPPAN</strong>
+                <p>Action Movie</p>
+            </div>
+        </div>
+    </li>
+    <!--slide-box-7------------------>
+    <li class="item-g">
+        <div class="latest-box">
+            <!--img-------->
+            <div class="latest-b-img">
+                <img src="image/i-7.jpg">
+            </div>
+            <!--text---------->
+            <div class="latest-b-text">
+                <strong>KARNNAN</strong>
+                <p>Drama Movie</p>
+            </div>
+        </div>
+    </li>
+          </ul>
+    </section>
+
+<!----Finish--->
+       <div class="slide">
+        <h1>
+            <marquee behavior="slide"scrollamount="15"top="35">MOVIESITE</marquee> 
+            </h1>
+        </div>
+
+
+
+    <!--movies---------------------------->
+    <div class="movies-heading">
+        <h2>Movies</h2>
+    </div>
+    <section id="movies-list">
+        <!--box-1------------------------>
+        <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+                <div class="quality">HDRip</div>
+                <img src="images/rajarani.jpg">
+            </div>
+            <!--text--------->
+            <a href="#">
+                RajaRani (2018) Full Movie[In Tamil] With English Subtitles | HDRip 1080p HD
+            </a>
+        </div>
+         <!--box-2------------------------>
+         <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+                <div class="quality">HDRip</div>
+                <img src="images/i.jpg">
+            </div>
+            <!--text--------->
+            <a href="#">
+                I (2018) Full Movie[In Tamil] With English Subtitles | HDRip 1080p HD
+            </a>
+        </div>
+         <!--box-3------------------------>
+         <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+                <div class="quality">HDRip</div>
+                <img src="images/petta.jpg">
+            </div>
+            <!--text--------->
+            <a href="#">
+                Petta (2019) Full Movie[In Tamil] With English Subtitles | HDRip 1080p HD
+            </a>
+        </div>
+         <!--box-4------------------------>
+         <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+                <div class="quality">HDRip</div>
+                <img src="images/maari.jpg">
+            </div>
+            <!--text--------->
+            <a href="#">
+                Maari (2018) Full Movie[In Tamil] With English Subtitles | HDRip 1080p HD
+            </a>
+        </div>
+         <!--box-5------------------------>
+         <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+                <div class="quality">HDRip</div>
+                <img src="images/mkp.jpg">
+            </div>
+            <!--text--------->
+            <a href="#">
+                MookthiAmman (2018) Full Movie[In Tamil] With English Subtitles | HDRip 1080p HD
+            </a>
+        </div>
+         <!--box-6------------------------>
+         <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+                <div class="quality">HDRip</div>
+                <img src="images/nkp.jpeg">
+            </div>
+            <!--text--------->
+            <a href="#">
+                NeerkontaParavai(2018) Full Movie[In Tamil] With English Subtitles | HDRip 1080p HD
+            </a>
+        </div>
+         <!--box-7------------------------>
+         <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+                <div class="quality">HDRip</div>
+                <img src="images/theri.jpg">
+            </div>
+            <!--text--------->
+            <a href="#">
+                Theri (2018) Full Movie[In Tamil] With English Subtitles | HDRip 1080p HD
+            </a>
+        </div>
+         <!--box-8------------------------>
+         <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+                <div class="quality">HDRip</div>
+                <img src="images/War.jpg">
+            </div>
+            <!--text--------->
+            <a href="#">
+                war (2018) Full Movie[In Tamil] With English Subtitles | HDRip 1080p HD
+            </a>
+        </div>
+    </section>
+<!--btns--------------->
+    <div class="btns">
+        <a href="#">Previous</a>
+        <a href="#">Next</a>
+    </div>
+    <!--footer------------------>
+    <footer>
+        <p>Going To Internet, Ltd Consumer Website</p>
+        <p>Copyright 2020 - GoingToInternet</p>
+    </footer>
+    </body>
+</html>
